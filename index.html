@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Online Food Delivery Service in India | MyOnlineMeal.com</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/460972f973.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 700px)"
+      href="phone.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <div class="logo">
+        <img src="logo.jpg" alt="MyOnlineMeal.com" />
+      </div>
+
+      <div>
+        <i class="fa-solid fa-bars" id="menu-bar"></i>
+      </div>
+
+      <div id="items">
+        <ul>
+          <i class="fa-solid fa-xmark" id="close-menu"></i>
+          <li class="item"><a href="#home">Home</a></li>
+          <li class="item"><a href="#services-container">Services</a></li>
+          <li class="item"><a href="#client-section">Our Clients</a></li>
+          <li class="item"><a href="#contact-box">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="home">
+      <h1 class="h-primary">Welcome to MyOnlineMeal</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
+        dolorum.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      <button class="btn">Order Now</button>
+    </section>
+
+    <section id="services-container">
+      <h1 class="h-primary center">Our Services</h1>
+      <div id="services">
+        <div class="box">
+          <img src="img/1.png" alt="" />
+          <h2 class="h-secondary center">Food Catering</h2>
+          <p class="center">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et,
+            corrupti necessitatibus saepe harum ipsa quis esse! Dicta vero
+            incidunt quasi eveniet. Possimus aliquam incidunt, hic maxime quis
+            quod in soluta omnis quasi consequuntur iure!
+          </p>
+        </div>
+        <div class="box">
+          <img src="img/2.png" alt="" />
+          <h2 class="h-secondary center">Bulk Ordering</h2>
+          <p class="center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            nemo repudiandae quia eligendi ex laborum, earum itaque sunt
+            deserunt iste error ipsum quos dolores velit, quaerat ea harum esse
+            quo magnam voluptatum ullam delectus?
+          </p>
+        </div>
+        <div class="box">
+          <img src="img/3.png" alt="" />
+          <h2 class="h-secondary center">Food Ordering</h2>
+          <p class="center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            nemo repudiandae quia eligendi ex laborum, earum itaque sunt
+            deserunt iste error ipsum quos dolores velit, quaerat ea harum esse
+            quo magnam voluptatum ullam delectus?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="client-section">
+      <img class="apple" src="img/logo1.png" alt="apple" />
+      <img class="microsoft" src="img/logo2.png" alt="microsoft" />
+      <img class="skype" src="img/logo4.png" alt="skype" />
+      <img class="hp" src="img/logo3.png" alt="HP" />
+    </section>
+
+    <section id="contact-box">
+      <h1 class="h-primary center">Contact Us</h1>
+      <form action="">
+        <div class="form-group">
+          <label for="name">Name : </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your Name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email : </label>
+          <input
+            type="email"
+            name="name"
+            id="email"
+            placeholder="Enter your Email Address"
+          />
+        </div>
+        <div class="form-group">
+          <label for="phone">Contact Number : </label>
+          <input
+            type="phone"
+            name="name"
+            id="phone"
+            placeholder="Enter your Phone Number"
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Message : </label>
+          <textarea
+            name="message"
+            id="message"
+            cols="26"
+            rows="10"
+            placeholder="Text here..."
+          ></textarea>
+        </div>
+      </form>
+      <button class="btn1">Submit</button>
+    </section>
+
+    <footer>
+      <div class="center">
+        Copyright &copy; www.myOnlineMeal.com. All rights reserved!
+      </div>
+    </footer>
+
+    <script>
+      const lists = document.getElementById("items");
+      const closeMenu = document.getElementById("close-menu");
+      const menuBar = document.getElementById("menu-bar");
+
+      menuBar.addEventListener("click", clickOnMenuBar);
+      function clickOnMenuBar() {
+        console.log("clickOnMenuBar");
+        menuBar.style.display = "none";
+        closeMenu.style.display = "block";
+        lists.style.display = "block";
+      }
+      closeMenu.addEventListener("click", clickOnCloseMenu);
+      function clickOnCloseMenu() {
+        console.log("clickOnCloseMenu");
+        closeMenu.style.display = "none";
+        menuBar.style.display = "block";
+        lists.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
